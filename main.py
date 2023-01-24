@@ -1,3 +1,5 @@
+from pprint import pprint
+
 file_path = "cook_book.txt"
 
 
@@ -11,13 +13,6 @@ def get_shop_list_by_dishes(dishes,person_count):
                 order_sheet[pop_key] = ingr
 
     return order_sheet
-
-
-
-
-
-
-
 
 
 
@@ -41,8 +36,9 @@ with open(file_path,'r',encoding = "utf-8" ) as f:
         f.readline()
         cook_book[name_recipe] = employ
 
-
-print(cook_book)
-print(get_shop_list_by_dishes(['Омлет','Запеченный картофель'],2))
+print("HW_1--------------------\n")
+pprint(cook_book)
+print("HW_2------------------------\n")
+pprint(get_shop_list_by_dishes(['Омлет','Запеченный картофель'],2))
 
 
